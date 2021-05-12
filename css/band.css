@@ -1,0 +1,12 @@
+#band
+{
+	position:relative;
+	 font-size: 15px;
+	padding-left:250px;
+	padding-right: 64px;
+	  /*background-color:gray;*/
+	  max-width: 800px;
+	  text-align: center;
+	  max-height: 800px;
+	 /* margin-left: 150px;*/
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/navagation.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+	<!-- navagation bar -->
+
+	<div class="nav">
+
+		<ul class="lnav">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars" style="color:white;"></i></a>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#hs">HISTORY</a></li>
+			<li><a href="#band">BAND</a></li>
+			<li><a href="#hits">HITS</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+		<div class="rnav">
+			<input type="text" name="search" placeholder="type to search" class="search">
+			<a class="search-btn" href="#">
+				<i class="fas fa-search"></i>
+			</a>
+		</div>
+	</div>
+	<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#hs" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HISTORY</a>
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#hits" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HITS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+<!--Used to toggle the menu on small screens when clicking on the menu button-->
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+
+	<!-- page content -->
+
+	<div id="content">
+
+		<!-- slide show  -->
+			<div class="ss">
+				<img src="../pjimages/image6.jpg" style="width:100%">
+			</div>
+			<div class="ss">
+				<img src="../pjimages/image1.jpg" style="width:100%">
+			</div>
+			<div class="ss">
+				<img src="../pjimages/image2.jpg" style="width:100%">
+
+			</div>
+			<div class="ss">
+				<img src="../pjimages/image5.jpg" style="width:100%">
+			</div>
+			<div class="ss">
+				<img src="../pjimages/image4.jpg" style="width:100%">
+
+			</div>
+
+
+
+		<script type="text/javascript">
+			var myIndex = 0;
+			carousel();
+			function carousel() {
+  			var i;
+  			var x = document.getElementsByClassName("ss");
+  			for (i = 0; i < x.length; i++) {
+    			x[i].style.display = "none";
+ 			 }
+ 			myIndex++;
+ 			if (myIndex > x.length) {myIndex = 1}
+ 			x[myIndex-1].style.display = "block";
+ 			setTimeout(carousel, 5000);
+		}
+
+		</script>
+
+
+		<!-- HISTORY -->
+		<div class="hs1" id="hs">
+			<h2 class="tts">HISTORY</h2>
+			<p class="tts">(1967-1994)</p><br>
+			<p class="txts">Kurt Donald Cobain (February 20, 1967 – April 5, 1994) was an American singer-songwriter and musician, best known as the guitarist, primary songwriter and frontman of the rock band Nirvana. Through his angst-fueled songwriting and anti-establishment persona, Cobain's compositions widened the thematic conventions of mainstream rock music. He was often heralded as a spokesman of Generation X and is considered to be one of the most influential musicians in the history of alternative rock.<br/>
+			Born in Aberdeen, Washington, Cobain formed the band Nirvana with Krist Novoselic and Aaron Burckhard in 1987 and established it as part of the Seattle music scene which later became known as grunge.<br/>
+			During the last years of his life, Cobain struggled with heroin addiction and chronic health problems such as depression. He also struggled with the personal and professional pressures of fame, as well as his marriage to musician Courtney Love.In March 1994, Cobain overdosed on a combination of champagne and Rohypnol, and subsequently entered an intervention and underwent a detox program. On April 8, 1994, Cobain was found dead at his home in Seattle at the age of 27; police concluded he had died on April 5 from a self-inflicted shotgun wound to his head.<br/>
+			Cobain was posthumously inducted into the Rock and Roll Hall of Fame, along with Nirvana bandmates Krist Novoselic and Dave Grohl, in their first year of eligibility in 2014. Rolling Stone included Cobain in its lists of the 100 Greatest Songwriters of All Time, 100 Greatest Guitarists, and 100 Greatest Singers of All Time. He was ranked 7th by MTV in the "22 Greatest Voices in Music". In 2006, he was placed 20th by Hit Parader on their list of the "100 Greatest Metal Singers of All Time".</p>
+			<br>
+		</div>
+
+
+		<!-- BAND -->
+		<div class="band1"id="band">
+				<h2 class="tts">NIRVANA</h2>
+				<p class="txts"> Nirvana was an American rock band formed in Aberdeen, Washington, in 1987. Founded by lead singer-songwriter and guitarist Kurt Cobain and bassist Krist Novoselic,the band went through a succession of drummers before recruiting Dave Grohl in 1990. Nirvana's success popularized alternative rock, and they were often referenced as the figurehead band of Generation X. Their music maintains a popular following and continues to influence modern rock and roll culture.
+				Characterized by their punk aesthetic, Nirvana's fusion of pop melodies with noise, combined with their themes of abjection and social alienation, made them hugely popular.<br/>
+				By 2009, Nirvana record sales were over 75 million worldwide, making them one of the best-selling bands of all time. During their three years as a mainstream act, Nirvana received an American Music Award, Brit Award and Grammy Award, as well as seven MTV Video Music Awards and two NME Awards. They achieved five number-one hits on the Billboard Alternative Songs chart and four number-one albums on the Billboard 200. In 2004, Rolling Stone named Nirvana among the 100 greatest artists of all time. They were inducted into the Rock and Roll Hall of Fame in their 	first year of eligibility in 2014.
+				</p>
+
+				<h3 class="tts">BAND MEMBERS</h3>
+				<div class="container">
+
+					<div class="box">
+						<p class="marvel">Kurt Cobain</p>
+						<img src="../pjimages/kurt.jpg" class="model">
+						<div class="details">
+							<p>GUITAR/VOCAL</p>
+						</div>
+					</div>
+			        <div class="box">
+			            <p class="marvel">Krist Novoselic</p>
+			            <img src="../pjimages/krist.jpg" class="model">
+			            <div class="details">
+			                <p>BASS<br>(1987-1994)</p>
+			            </div>
+			        </div>
+			        <div class="box">
+			            <p class="marvel">Chad Channing</p>
+			            <img src="../pjimages/chad.jpg" class="model">
+			            <div class="details">
+			                <p>DRUM<br>(1988-1990)</p>
+			            </div>
+			        </div>
+			        <div class="box">
+			            <p class="marvel">Dave Grohl</p>
+			            <img src="../pjimages/dave.jpg" class="model">
+			            <div class="details">
+			                <p>DRUM<br>(1990-1994)</p>
+			            </div>
+			        </div>
+			        <div class="box">
+			            <p class="marvel">Jason Everman</p>
+			            <img src="../pjimages/jason.jpg" class="model">
+			            <div class="details">
+			                <p>GUITAR<br>(1989-1989)</p>
+			            </div>
+			        </div>
+			        <div class="box">
+			            <p class="marvel">Pat Smear</p>
+			            <img src="../pjimages/pat.jpg" class="model">
+		            	<div class="details">
+		                	<p>GUITAR/VOCAL<br>(1993-1994)</p>
+		            	</div>
+		        	</div>
+				</div>
+
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="hits1" id="hits">
+			<h2 class="tts">HITS</h2>
+			<div class="playlist">
+			<img src="../pjimages/playlist1.jpg">
+
+    		<div class="player">
+		        <div class="imgbox">
+		        	<label>IN THE BLOOM</label>
+		        <audio controls>
+
+		            <source src="../audio/n1.mp3" type= "audio/mp3">
+		        </audio>
+		    </div>
+		     <div class="imgbox">
+		     	<label>SMELLS LIKE TEEN SPIRIT</label>
+		        <audio controls>
+		            <source src="../audio/n2.mp3" type= "audio/mpeg">
+		        </audio>
+		    </div>
+		     <div class="imgbox">
+		     	<label>COME AS YOU ARE</label>
+		        <audio controls>
+		            <source src="../audio/n3.mp3" type= "audio/mpeg">
+		       	 </audio>
+		    	</div>
+		    	<div class="imgbox">
+		    		<label>YOU KNOW YOUR RIGHT</label>
+		        <audio controls>
+		            <source src="../audio/n4.mp3" type= "audio/mpeg">
+		       	 </audio>
+		    	</div>
+		    	<div class="imgbox">
+		    		<label>THE MAN WHO SOLD THE WORLD</label>
+		        <audio controls>
+		            <source src="../audio/n5.mp3" type= "audio/mpeg">
+		       	 </audio>
+		    	</div>
+		    </div>
+	 	</div>
+		<div class="cont" id="contact">
+			 <h2 class="ts">CONTACT</h2>
+		    <p class="para">FAN? CONTACT</p>
+			<div class="contcontainer">
+
+		    <div class="w3-col m6 w3-large w3-margin-bottom" style="color:black" id="ig">
+		        <i class="fa fa-map-marker" style="width:30px; color:black"></i> Chicago, US<br>
+		        <i class="fa fa-phone" style="width:30px;color:black"></i> Phone: +00 151515<br>
+		        <i class="fa fa-envelope" style="width:30px;color:black"> </i> Email: mail@mail.com<br>
+		     </div>
+		    <div class="fm">
+		     <form >
+	          <div class="f1" >
+	            <div class="name">
+	              <input  type="text" placeholder="Name" required name="Name">
+	            </div>
+	            <div class="mail">
+	              <input  type="Email" placeholder="Email" required name="Email">
+	            </div>
+	          </div>
+	          <textarea class="message" type="text" placeholder="Message" required name="Message"></textarea>
+	          <div class="btn">
+	          <button class="btn1" type="submit">SEND</button>
+	      </div>
+        	</form>
+
+   			</div>
+
+    	</div>
+    	</div>
+    	<div class="footer">
+    		<img src="../pjimages/image6.jpg">
+    	</div>
+
+
+
+
+	</div>
+</body>
+</html>
